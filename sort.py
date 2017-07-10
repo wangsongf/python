@@ -49,6 +49,7 @@ if __name__ == "__main__":
 
     l=[88,11,2,33,22,4,55,33,221,34]
     Root=BTree(l[0])
+    print l[0]
     node=Root
     for i in range(1,len(l)):
         insert(Root,l[i])
