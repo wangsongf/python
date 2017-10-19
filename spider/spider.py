@@ -1,4 +1,5 @@
 #!/usr/bin/python
+# encoding: utf-8
 #Filename:spider.py
  
 import sys
@@ -15,15 +16,15 @@ class myparser(HTMLParser.HTMLParser):
              if (name == 'href')|(name == 'src'):#查询该上面两个标签的属性
                  val = re.search('http://',value)#匹配链接是否为可用链接（有的时候会有空链接的）
                  if val != None:
-                      print value     
+                      print(value)     
                        
 if sys.argv[1] == '-u':
 	content = (urllib2.urlopen(sys.argv[2])).read()#打开网址并读取内容
 	con = myparser()
 	con.feed(content)#把content的内容，传给myparser分析
 else:
-	print 'Usage:%s -u url'%sys.argv[0] 
-print """                                                                                                                     
+	print('Usage:%s -u url'%sys.argv[0]) 
+print("""                                                                                                                     
 -------------------------------------------------------------------------------------------                                                                                                                    
 |        **        **        **   ******************   *****************              |
 |         **      ****      **    **                   **               *             |
@@ -45,4 +46,4 @@ print """
 |              author:scr@t                              version: 1.0                 |
 |                                                                                     |
 -------------------------------------------------------------------------------------------
-"""   
+""")   

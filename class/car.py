@@ -13,6 +13,7 @@ class Car():
 	def read_odometer(self):
 		"""打印一条指出汽车里程的消息"""
 		print("This car has " + str(self.odometer_reading) + " miles on it.")
+<<<<<<< HEAD
 	def update_odometer(self, mileage):
 		"""
 		将里程表读数设置为指定的值
@@ -28,6 +29,11 @@ class Car():
 
 my_new_car = Car('audi', 'a4', 2016)
 print(my_new_car.get_descriptive_name())
+=======
+my_new_car = Car('audi', 'a4', 2016)
+print(my_new_car.get_descriptive_name())
+
+>>>>>>> 8f686a6b5c580976db52dab0e8b922a1878856e7
 my_new_car.read_odometer()
 
 my_new_car.odometer_reading = 23

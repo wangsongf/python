@@ -5,6 +5,7 @@ alien = {
 	'x_pos': '0', 
 	'y_pos': '50'
 	}
+#遍历所有的键—值对
 for key,value in alien.items():
 	print("\nkey:"+key)
 	print("\nvalue:"+value)
@@ -12,7 +13,7 @@ for key,value in alien.items():
 #遍历集合的所有键
 for name in alien.keys():
 	print(name.title())
-
+#遍历字典中所有键
 favorite_languages = {
 'jen': 'python',
 'sarah': 'c',
@@ -33,3 +34,12 @@ favorite_languages = {
 }
 if 'erin' not in favorite_languages.keys():
 	print("Erin, please take our poll!")
+#遍历字典中所有值
+favorite_languages = {
+'jen': 'python',
+'sarah': 'c',
+'edward': 'ruby',
+'phil': 'python',
+}
+for name in favorite_languages.keys():
+	print(name.title())
