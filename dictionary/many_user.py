@@ -1,3 +1,4 @@
+#在字典中去嵌套字典
 users = {
 	'aeinstein': {
 		'first': 'albert',

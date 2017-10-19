@@ -1,3 +1,4 @@
+#遍历集合的所有键和值
 alien = {
 	'color': 'red', 
 	'point': '5', 
@@ -8,7 +9,7 @@ for key,value in alien.items():
 	print("\nkey:"+key)
 	print("\nvalue:"+value)
 
-
+#遍历集合的所有键
 for name in alien.keys():
 	print(name.title())
 
