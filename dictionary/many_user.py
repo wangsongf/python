@@ -1,8 +1,5 @@
-<<<<<<< HEAD
-#在字典中去嵌套字典
-=======
+
 #在字典中存储字典
->>>>>>> 8f686a6b5c580976db52dab0e8b922a1878856e7
 users = {
 	'aeinstein': {
 		'first': 'albert',

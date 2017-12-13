@@ -9,7 +9,9 @@ def hot_github(keyword):
     main_url = 'https://github.com{0}'
     html = requests.get(url).content.decode('utf-8')
     reg_hot_url = re.compile('<h3 class="repo-list-name">\s*<a href="(.*?)">')
+    print(reg_hot_url)
     hot_url = [main_url.format(i) for i in re.findall(reg_hot_url, html)]
+    print(hot_url)
     url_abstract_reg = re.compile('<p class="repo-list-description">\s*(.*?)\s*</p>')
     summary_text = re.findall(url_abstract_reg, html)
     hotDF = pd.DataFrame()

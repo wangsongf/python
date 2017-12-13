@@ -40,7 +40,9 @@ def get_page(url, date, headers):
 
 def get_img(page, headers):
     reg = re.compile('http://.*?\.jpg')
+	#print(reg)
     imglist = re.findall(reg, page)[::3]
+	#print(imglist)
     x = 0
     for imgurl in imglist:
         with open('/root/wangsf/%s.jpg' % x, 'wb') as file:

@@ -8,7 +8,9 @@ lagou_python_data = []
 for i in range(1, 31):
     print('抓取第{0}页'.format(i))
     lagou_url_ = lagou_url.format(i, kw)
+    print(lagou_url_)
     lagou_data = json.loads(rq.get(lagou_url_).text)
+    print(lagou_data)
     lagou_python_data.extend(lagou_data['content']['positionResult']['result'])
 
 position_data = pd.DataFrame(lagou_python_data)

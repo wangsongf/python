@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 #返回简单值
 def get_formatted_name(first_name, last_name):
 	"""返回整洁的姓名"""
@@ -19,7 +18,6 @@ musician = get_formatted_name('jimi', 'hendrix')
 print(musician)
 musician = get_formatted_name('john', 'hooker', 'lee')
 print(musician)
-=======
 
 def get_formatted_name(first_name, last_name):
     """返回整洁的姓名"""
@@ -40,4 +38,3 @@ musician = get_formatted_name('jimi', 'hendrix')
 print(musician)
 musician = get_formatted_name('john', 'hooker', 'lee')
 print(musician)
->>>>>>> 8f686a6b5c580976db52dab0e8b922a1878856e7
