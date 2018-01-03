@@ -42,8 +42,9 @@ def main():
     with codecs.open('movies','wb', encoding='utf-8') as f:
         while True:
             html = download_page(url)
-            movies, url =parse_html(html)
-            f.write(u'{movies}\n'.format(movies='\n'.join(movies)))
+            if html != 'None':
+                movies, url =parse_html(html)
+                f.write(u'{movies}\n'.format(movies='\n'.join(movies)))
 
 if __name__ == '__main__':
     main()
