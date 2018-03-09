@@ -50,9 +50,9 @@ if __name__ == "__main__":
     Root=BTree(l[0])
     print(l[0])
     node=Root
-    for i in range(1,len(l)):
+    for i in range(1,len(l)):		
         insert(Root,l[i])
-
+        print(Root.right)
     print("1---->10")
     inorder(Root)
     print("10--->1")
