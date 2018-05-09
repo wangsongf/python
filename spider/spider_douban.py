@@ -30,7 +30,7 @@ def parse_html(html):
         movie_name_list.append(movie_name)
         movie_name_list.append(movie_info)
         movie_name_list.append(movie_star)
-        
+
     # 下一页链接
     next_page = soup.find('span', attrs={'class': 'next'}).find('a')
     if next_page:

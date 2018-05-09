@@ -13,6 +13,6 @@ cur.execute("SELECT * FROM learning_logs_topic")
  
 for row in cur.fetchall(): 
     #print(str(row[0])+row[1]+str(row[2])) 
-	print(row[0]) 
+	print(str(row[0])+row[1]+str(row[2])) 
  
 db.close()  
